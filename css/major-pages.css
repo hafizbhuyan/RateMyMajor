@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.header {
+    width: 100%;
+    height: 45vh;
+    background-color: #198436;
+}
+
+.header .title {
+    text-align: center;
+    padding-top: 5%;
+    font-size: 50px;
+    color: #EFF9F0;
+}
+
+.header .description {
+    text-align: center;
+    font-size: 15px;
+    color: #EFF9F0;
+}
+
+.rating {
+    background-color: #193985;
+    color: #EFF9F0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 40vh;
+    align-items: center;
+    padding: 5%;
+}
+
+.rating .number-rating {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.rating .number-rating .number-summary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.rating .number-rating .number-summary .number {
+    border: solid 2px #030800;
+    border-radius: 50%;
+    width: 50px;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.rating .number-rating .number-summary .out-of {
+    margin-top: 10%;
+}
+
+.major-review .review-box .actual-review {
+    text-align: center;
+    border: solid 2px #030800;
+    background-color: #2F322E;
+    padding: 5%;
+}
