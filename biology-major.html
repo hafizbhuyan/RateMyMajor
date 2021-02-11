@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/major-pages.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
 </head>
 
 <body>
@@ -45,28 +47,89 @@
         </p>
     </div>
 
-    <div class="rating">
-        <div class="number-rating">
-            <div class="number-summary">
-                <p class="number">3</p>
-                <p class="out-of">/</p>
-                <p class="number">4</p>
+    <section class="tabs">
+        <div class="container">
+            <div id="tab-1" class="tab-item tab-border">
+                <i class="fas fa-door-open fa-3x"></i>
+                <p class="hide-sm">Overview</p>
+            </div>
+            <div id="tab-2" class="tab-item">
+                <i class="fas fa-road fa-3x"></i>
+                <p class="hide-sm">Career Paths</p>
+            </div>
+            <div id="tab-3" class="tab-item">
+                <i class="fas fa-comment-dots fa-3x"></i>
+                <p class="hide-sm">Ratings</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="tab-content">
+        <div class="container">
+            <!-- Tab Content 1 -->
+            <div id="tab-1-content" class="tab-content-item show">
+                <div class="tab-1-content-inner">
+                    <div>
+                        <p class="text-lg">
+                            Here is an overview if you're looking to major in Biology.
+                        </p>
+                    </div>
+                </div>
             </div>
 
-            <div class="rating-summary">
-                <p>Based on 36 Ratings <br> <b>76% of students recommend this major</b></p>
+            <!-- Tab Content 2 -->
+            <div id="tab-2-content" class="tab-content-item">
+                <div class="tab-2-content-top">
+                    <p class="text-lg">
+                        Possible career paths for biology majors.
+                    </p>
+                </div>
+                <div class="tab-2-content-bottom">
+                    <ul>
+                        <li>Macrobiology</li>
+                        <li>Microbiology</li>
+                        <li>Molecular Biology</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Tab Content 3 -->
+            <div id="tab-3-content" class="tab-content-item">
+                <div class="text-center">
+                    <p class="text-lg">
+                        Reviews from Biology major graduates and those currently in the field.
+                    </p>
+                </div>
+
+                <div>
+                    <div class="rating">
+                        <div class="number-rating">
+                            <div class="number-summary">
+                                <p class="number">3</p>
+                                <p class="out-of">/</p>
+                                <p class="number">4</p>
+                            </div>
+
+                            <div class="rating-summary">
+                                <p>Based on 36 Ratings <br> <b>76% of students recommend this major</b></p>
+                            </div>
+                        </div>
+                        <div class="major-review">
+                            <div class="review-box">
+                                <p class="actual-review">
+                                    This Major is all about spending time in the Library as well as taking
+                                    lots of Chemistry. If you aren't interested in pursuing fields such as
+                                    medicine, this major is not something for you.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="major-review">
-            <div class="review-box">
-                <p class="actual-review">
-                    This Major is all about spending time in the Library as well as taking
-                    lots of Chemistry. If you aren't interested in pursuing fields such as
-                    medicine, this major is not something for you.
-                </p>
-            </div>
-        </div>
-    </div>
+    </section>
+
+    <script src="./js/major-pages.js"></script>
 </body>
 
 </html>

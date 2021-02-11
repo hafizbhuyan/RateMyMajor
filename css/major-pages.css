@@ -60,3 +60,59 @@
     background-color: #2F322E;
     padding: 5%;
 }
+
+.tabs {
+	background: #141414	;
+	padding-top: 1rem;
+	border-bottom: 3px solid #3D3D3D;
+	border-right: none;
+}
+
+.tabs .container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 1rem;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.tabs p {
+	font-size: 20px;
+	padding-top: 10px;
+}
+
+.tabs .container > div {
+	padding: 1.5rem 0;
+}
+
+.tabs .container > div:hover {
+	color: #FFFFFF;
+	cursor: pointer;
+}
+
+.tab-border {
+	border-bottom: #E50914 4px solid;
+}
+
+/* Tab Content */
+.tab-content {
+	padding: 3rem 0;
+	background: #000000;
+	color: #FFFFFF;
+}
+
+/* Hide initial content */
+#tab-1-content,
+#tab-2-content,
+#tab-3-content {
+	display: none;
+	opacity: 0;
+}
+
+.show {
+	display: block !important;
+	opacity: 1 !important;
+	transition: all 1000 ease-in;
+}
+

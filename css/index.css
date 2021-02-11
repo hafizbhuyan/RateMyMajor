@@ -22,6 +22,20 @@
     color: #EFF9F0;
 }
 
+.header .account {
+    display: flex;
+    justify-content: center;
+}
+
+.header .account a {
+    color: #E9E6D6;
+    text-decoration: none;
+}
+
+.header .account a:hover {
+    color: #AFADA2;
+}
+
 .header .search-bar {
     width: 80%;
     margin-left: 10%;
