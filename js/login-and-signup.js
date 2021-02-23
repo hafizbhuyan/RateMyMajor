@@ -1,12 +1,11 @@
-function validateName() {
-    var x, text;
-    x = document.getElementById("name").value;
-    if (x == "") {
-        text = "Name must be filled";
-    }
-    else {
-        text = "";
-    }
-    document.getElementById("name-demo").innerHTML = text;
-}
+const signUpButton = document.getElementById('signUp');
+const signInButton = document.getElementById('logIn');
+const container = document.getElementById('container');
 
+signUpButton.addEventListener('click', () => {
+    container.classList.add("right-panel-active");
+});
+
+signInButton.addEventListener('click', () => {
+    container.classList.remove("right-panel-active");
+});

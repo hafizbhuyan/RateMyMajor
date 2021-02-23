@@ -5,7 +5,7 @@
 
 .header {
     width: 100%;
-    height: 65vh;
+    height: 70vh;
     background-color: #084887;
 }
 
@@ -25,15 +25,15 @@
 .header .account {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
-.header .account a {
-    color: #E9E6D6;
-    text-decoration: none;
+.header a {
+    background-color: #EF233C;
 }
 
-.header .account a:hover {
-    color: #AFADA2;
+.header a:hover {
+    background-color: #FF0022;
 }
 
 .header .search-bar {
@@ -50,6 +50,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
+    justify-content: center;
 }
 
 .option {
@@ -57,7 +58,6 @@
     grid-template-rows: repeat(2, 1fr);
     width: 300px;
     height: 300px;
-    background-color: #32021F;
     justify-content: center;
     margin-left: 15%;
     background-image: url('../img/college-bg.jpg');
@@ -70,7 +70,7 @@
 }
 
 .option .option-title {
-    color: #EFF9F0;
+    color: #141414;
     font-size: 25px;
     text-align: center;
     margin-top: 35%;
