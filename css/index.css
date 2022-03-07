@@ -1,77 +1,135 @@
-* {
-    margin: 0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Montserrat:thin,extra-light,light,100,200,300,400,500,600,700,800');
+
+:root {
+    font-size: 16px;
+    font-family: 'Montserrat', 'Arial', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --purple: purple;
+    --gold: gold;
+    --white: #FBFEF9;
 }
 
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+p {
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    width: 100%;
+    height: auto;
+    padding: 0.50rem 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--purple);
+}
+
+nav .logo-container {
+    margin-left: 2rem;
+}
+
+nav .link-container {
+    margin-left: 5rem;
+}
+
+nav .link-container a {
+    margin: 0 0.50rem;
+    color: var(--white);
+}
+
+nav .link-container a:hover {
+    color: var(--gold);
+    transform: scale(1.05);
+}
+
+nav .link-container .icon {
+    display: none;
+}
+
+/* header */
 .header {
     width: 100%;
-    height: 70vh;
-    background-color: #084887;
+    height: 80vh;
+    background-color: var(--purple);
+    color: var(--white);
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
 }
 
-.header .title {
+.header .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding-top: 5%;
-    font-size: 50px;
-    color: #EFF9F0;
 }
 
-.header .description {
-    text-align: center;
-    font-size: 25px;
-    color: #EFF9F0;
-}
-
-.header .account {
+.header .picture {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .header a {
-    background-color: #EF233C;
+    width: 25%;
+    height: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--white);
+    color: var(--purple);
+    font-weight: 800;
 }
 
 .header a:hover {
-    background-color: #FF0022;
+    cursor: pointer;
+    background-color: var(--purple);
+    color: var(--white);
+    border: 2px solid var(--white);
 }
 
-.header .search-bar {
-    width: 80%;
-    margin-left: 10%;
-    margin-top: 5%;
-    padding: 20px;
-}
-
-.search-options {
-    background-color: #8884FF;
+.how-it-works {
     width: 100%;
-    height: 75vh;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    height: auto;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: center;
-}
-
-.option {
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    width: 300px;
-    height: 300px;
-    justify-content: center;
-    margin-left: 15%;
-    background-image: url('../img/college-bg.jpg');
-}
-
-.option .search-bar {
-    width: 50%;
-    height: 25%;
-    margin-left: 12%;
-}
-
-.option .option-title {
-    color: #141414;
-    font-size: 25px;
     text-align: center;
-    margin-top: 35%;
+}
+
+.how-it-works .section {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
 }
