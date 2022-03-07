@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/css/get-started.css">
+	<title>Get Started | RateMyMajor</title>
+</head>
+<body>
+	<script src="/js/get-started.js"></script>
+
+	<nav>
+        <div class="logo-container">
+            <a href="#"><img src="/img/logo.png" width="150" /></a>
+        </div>
+        <div class="link-container" id="navbar-links">
+            <a href="#">Schools</a>
+            <a href="#">Careers</a>
+            <a href="#">Alumni</a>
+            <a href="#">Contact Us</a>
+            <a href="javascript:void(0);" class="icon" onclick="headerTransition()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </nav>
+
+	<section class="questions" id="strengths">
+		<h2>Strengths</h2>
+		<h4>Please list up to 5 strengths below</h4>
+
+		<div class="field">
+			<h4>Strength 1</h4>
+			<input type="text" name="one" id="questionOne">
+		</div>
+
+		<div class="field">
+			<h4>Strength 2</h4>
+			<input type="text" name="one" id="questionTwo">
+		</div>
+
+		<div class="field">
+			<h4>Strength 3</h4>
+			<input type="text" name="one" id="questionThree">
+		</div>
+
+		<div class="field">
+			<h4>Strength 4</h4>
+			<input type="text" name="one" id="questionFour">
+		</div>
+
+		<div class="field">
+			<h4>Strength 5</h4>
+			<input type="text" name="one" id="questionFive">
+		</div>
+
+		<a onclick="SubmitAnswers('Strengths')">Submit</a>
+	</section>
+
+	<section class="questionsInActive" id="weaknesses">
+		<h2>Weaknesses</h2>
+		<h4>Please list up to 5 weaknesses below</h4>
+
+		<div class="field">
+			<h4>Weakeness 1</h4>
+			<input type="text" name="one" id="questionOne">
+		</div>
+
+		<div class="field">
+			<h4>Weakness 2</h4>
+			<input type="text" name="one" id="questionTwo">
+		</div>
+
+		<div class="field">
+			<h4>Weakness 3</h4>
+			<input type="text" name="one" id="questionThree">
+		</div>
+
+		<div class="field">
+			<h4>Weakness 4</h4>
+			<input type="text" name="one" id="questionFour">
+		</div>
+
+		<div class="field">
+			<h4>Weakness 5</h4>
+			<input type="text" name="one" id="questionFive">
+		</div>
+
+		<a onclick="SubmitAnswers('Weaknesses')">Submit</a>
+	</section>
+
+	<section class="questionsInActive" id="hobbies">
+		<h2>Hobbies</h2>
+		<h4>Please list up to 5 hobbies below</h4>
+
+		<div class="field">
+			<h4>Hobby 1</h4>
+			<input type="text" name="one" id="questionOne">
+		</div>
+
+		<div class="field">
+			<h4>Hobby 2</h4>
+			<input type="text" name="one" id="questionTwo">
+		</div>
+
+		<div class="field">
+			<h4>Hobby 3</h4>
+			<input type="text" name="one" id="questionThree">
+		</div>
+
+		<div class="field">
+			<h4>Hobby 4</h4>
+			<input type="text" name="one" id="questionFour">
+		</div>
+
+		<div class="field">
+			<h4>Hobby 5</h4>
+			<input type="text" name="one" id="questionFive">
+		</div>
+
+		<a onclick="SubmitAnswers('Hobbies')">Submit</a>
+	</section>
+
+	<section class="questionsInActive" id="summary">
+		<h2>Summary</h2>
+		<h4>Here's a summary of everything you entered.</h4>
+	</section>
+</body>
+</html>
