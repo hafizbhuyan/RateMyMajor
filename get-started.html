@@ -14,7 +14,7 @@
         <div class="logo-container">
             <a href="#"><img src="/img/logo.png" width="150" /></a>
         </div>
-        <div class="link-container" id="navbar-links">
+        <!-- <div class="link-container" id="navbar-links">
             <a href="#">Schools</a>
             <a href="#">Careers</a>
             <a href="#">Alumni</a>
@@ -22,7 +22,7 @@
             <a href="javascript:void(0);" class="icon" onclick="headerTransition()">
                 <i class="fa fa-bars"></i>
             </a>
-        </div>
+        </div> -->
     </nav>
 
 	<section class="questions" id="strengths">
@@ -31,27 +31,27 @@
 
 		<div class="field">
 			<h4>Strength 1</h4>
-			<input type="text" name="one" id="questionOne">
+			<input type="text" name="one" id="questionOne" tabindex="1" autofocus>
 		</div>
 
 		<div class="field">
 			<h4>Strength 2</h4>
-			<input type="text" name="one" id="questionTwo">
+			<input type="text" name="one" id="questionTwo" tabindex="2">
 		</div>
 
 		<div class="field">
 			<h4>Strength 3</h4>
-			<input type="text" name="one" id="questionThree">
+			<input type="text" name="one" id="questionThree" tabindex="3">
 		</div>
 
 		<div class="field">
 			<h4>Strength 4</h4>
-			<input type="text" name="one" id="questionFour">
+			<input type="text" name="one" id="questionFour" tabindex="4">
 		</div>
 
 		<div class="field">
 			<h4>Strength 5</h4>
-			<input type="text" name="one" id="questionFive">
+			<input type="text" name="one" id="questionFive" tabindex="5">
 		</div>
 
 		<a onclick="SubmitAnswers('Strengths')">Submit</a>
@@ -63,27 +63,27 @@
 
 		<div class="field">
 			<h4>Weakeness 1</h4>
-			<input type="text" name="one" id="questionOne">
+			<input type="text" name="one" id="questionOne" tabindex="1" autofocus>
 		</div>
 
 		<div class="field">
 			<h4>Weakness 2</h4>
-			<input type="text" name="one" id="questionTwo">
+			<input type="text" name="one" id="questionTwo" tabindex="2">
 		</div>
 
 		<div class="field">
 			<h4>Weakness 3</h4>
-			<input type="text" name="one" id="questionThree">
+			<input type="text" name="one" id="questionThree" tabindex="3">
 		</div>
 
 		<div class="field">
 			<h4>Weakness 4</h4>
-			<input type="text" name="one" id="questionFour">
+			<input type="text" name="one" id="questionFour" tabindex="4">
 		</div>
 
 		<div class="field">
 			<h4>Weakness 5</h4>
-			<input type="text" name="one" id="questionFive">
+			<input type="text" name="one" id="questionFive" tabindex="5">
 		</div>
 
 		<a onclick="SubmitAnswers('Weaknesses')">Submit</a>
@@ -95,27 +95,27 @@
 
 		<div class="field">
 			<h4>Hobby 1</h4>
-			<input type="text" name="one" id="questionOne">
+			<input type="text" name="one" id="questionOne" tabindex="1" autofocus>
 		</div>
 
 		<div class="field">
 			<h4>Hobby 2</h4>
-			<input type="text" name="one" id="questionTwo">
+			<input type="text" name="one" id="questionTwo" tabindex="2">
 		</div>
 
 		<div class="field">
 			<h4>Hobby 3</h4>
-			<input type="text" name="one" id="questionThree">
+			<input type="text" name="one" id="questionThree" tabindex="3">
 		</div>
 
 		<div class="field">
 			<h4>Hobby 4</h4>
-			<input type="text" name="one" id="questionFour">
+			<input type="text" name="one" id="questionFour" tabindex="4">
 		</div>
 
 		<div class="field">
 			<h4>Hobby 5</h4>
-			<input type="text" name="one" id="questionFive">
+			<input type="text" name="one" id="questionFive" tabindex="5">
 		</div>
 
 		<a onclick="SubmitAnswers('Hobbies')">Submit</a>
@@ -123,7 +123,43 @@
 
 	<section class="questionsInActive" id="summary">
 		<h2>Summary</h2>
-		<h4>Here's a summary of everything you entered.</h4>
+		<h4>Heres a summary of everything you entered.</h4>
+
+		<h4>Your strengths</h4>
+		<div id="strength-summary"></div>
+
+		<h4>Your weaknesses</h4>
+		<div id="weaknesses-summary"></div>
+
+		<h4>Your hobbies</h4>
+		<div id="hobbies-summary"></div>
+
+		<a onclick="ShowResults()">Show Results</a>
+	</section>
+
+	<section class="results" id="results-section">
+		<h2>Here are your results</h2>
+		<h4>
+			We recommend taking a screenshot and sharing with your family
+			and guidance counselor as a starting point!
+		</h4>
+
+		<div id="results">
+			<h2>Biology</h2>
+			<p>
+				Possible careers:
+				Agricultural Scientist, Air Pollution Analyst, Anesthesia Technician, Animal Scientist, Aquarium Technician, Biology Educator,
+				Biochemist, Biologist, Biomedical Engineer, Biotechnologist, Blood Bank Specialist, Botanist, Cancer Researcher, Cell Biologist,
+				Clinical Lab Scientist, Conservation Program Aid, Criminologist, Dentist, DNA Technician, Ecologist, Environmental Educator,
+				Environmental Scientist, EPA Inspector, Exhibit Technician, Fisheries Conservationist, Food Regulatory Inspector, Food Scientist,
+				Genetic Engineer, Healthcare Recruiter, Hematologist, Hospital Administrator, Immunologist, Industrial Hygienist Technician,
+				Laboratory Supervisor, Marine Biologist, Medical Illustrator, Medical Research Assistant, Microbiologist, Natural Resource Conservation,
+				Occupational Safety Specialist, Optometrist Assistant, Park Ranger, Pharmaceutical Salesperson, Pharmacy Technician, Physical Therapist,
+				Physician, Physician Scribe, Program Analyst, Public Health Educator, Quality Engineer, Science Museum Curator, Science Teacher,
+				Scientific Photographer, Soil Conservationist, Strategic Management Consultant, Technical Marketing Specialist, Technical Services Coordinator,
+				Technical Writer, Toxicologist, Veterinary Assistant, Water/Wastewater Plant Agent, Wildlife Biologist, Zoologist
+			</p>
+		</div>
 	</section>
 </body>
 </html>
