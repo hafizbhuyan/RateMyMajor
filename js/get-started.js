@@ -86,14 +86,14 @@ function SubmitAnswers(form) {
         strengths.classList.replace('questions', 'questionsInActive')
         weaknesses.classList.replace('questionsInActive', 'questions')
         strengthInputs.push(formInputs)
-        SaveInputs(strengthInputs, 'Strengths')
+        SaveInputs(formInputs, 'Strengths')
         formInputs = []
         ScrollToTop()
     } else if (form == 'Weaknesses') {
         weaknesses.classList.replace('questions', 'questionsInActive')
         hobbies.classList.replace('questionsInActive', 'questions')
         weaknessInputs.push(formInputs)
-        SaveInputs(weaknessInputs, 'Weaknesses')
+        SaveInputs(formInputs, 'Weaknesses')
         formInputs = []
         ScrollToTop()
     } else if (form == 'Hobbies') {
@@ -126,20 +126,21 @@ function SaveInputs(inputs, type) {
 function ShowResults() {
     document.getElementById('summary').style.display = 'none'
     document.getElementById('results-section').style.display = 'flex'
+    document.getElementById('results').style.display = 'flex'
 
-    let majorOptions = []
-    let careerOptions = []
+    // let majorOptions = []
+    // let careerOptions = []
 
-    if (biologyCharacteristics.includes(strengthInputs) && biologyCharacteristics.includes(hobbyInputs) && !biologyCharacteristics.includes(weaknessInputs)) {
-        majorOptions.push('Biology')
-        for (let i = 0; i < biologyCareers.length / 4; i++) {
-            careerOptions.push(biologyCareers[i])
-        }
-    }
+    // if (biologyCharacteristics.includes(strengthInputs) && biologyCharacteristics.includes(hobbyInputs) && !biologyCharacteristics.includes(weaknessInputs)) {
+    //     majorOptions.push('Biology')
+    //     for (let i = 0; i < biologyCareers.length / 4; i++) {
+    //         careerOptions.push(biologyCareers[i])
+    //     }
+    // }
 
-    document.getElementById('results').innerHTML = 
-    `
-        Major Options: ${majorOptions} {\n}
-        Career Options: ${careerOptions}
-    `
+    // document.getElementById('results').innerHTML = 
+    // `
+    //     Major Options: ${majorOptions} {\n}
+    //     Career Options: ${careerOptions}
+    // `
 }
